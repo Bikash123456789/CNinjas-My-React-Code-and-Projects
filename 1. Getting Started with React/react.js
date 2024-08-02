@@ -1,10 +1,11 @@
-const heading = React.createElement(
-    "h1",
-    { className: "heading" },
-    "Hello Bikash"
-  );
+const heading = <h1>Hello JSX</h1>
+const para = <p>Welcome to the JSX Session</p>
+const btn = <button>Click Me JSX</button>
 
-const para = React.createElement('p',{className:"para"},"Welcome to the session")
-const btn = React.createElement("button",{className:"btn"},"Click Me Now")
-const div = React.createElement('div',{className:"App",children:[heading,para,btn]}) 
-ReactDOM.createRoot(document.getElementById("root")).render(div);
+const div = <div>
+    {heading}
+    {para}
+    {btn}
+</div>
+
+ReactDOM.createRoot(document.getElementById("root")).render(div)
