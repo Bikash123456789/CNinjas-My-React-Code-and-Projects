@@ -1,20 +1,37 @@
-const App = () =>{
-    const a = 6
-    const b = 8
-    const list = ["apple","banana","orange"]
-    const object = {name:"Bikash",age:27}
-    const sum = (a,b) => a+b
-    
-    return (<>
-       
-        <h2>The sum of {a} and {b} is {sum(a,b)} </h2>
-        <h3>{list}</h3>
-        {list.map((item,index)=>{
-            return <p key={index}>{item}</p>
-        })}
-        <p>{object.name}'s age is {object.age}</p>
-    </>)
-}
+const App = () => {
+  return (
+    <>
+      <table border="1">
+        <caption>This is the caption</caption>
+        <thead>
+          <tr>
+            <th>Col1</th>
+            <th>Col2</th>
+            <th>Col3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Bikash</td>
+            <td>27</td>
+            <td>Assam</td>
+          </tr>
+          <tr>
+            <td>Bikash</td>
+            <td>27</td>
+            <td>Assam</td>
+          </tr>
+          <tr>
+            <td>Bikash</td>
+            <td>27</td>
+            <td>Assam</td>
+          </tr>
+        </tbody>
+        <tfoot>Table Footer</tfoot>
+      </table>
+    </>
+  );
+};
 
-const root = ReactDOM.createRoot(document.getElementById("root"))
-root.render(<App/>)
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<App />);
