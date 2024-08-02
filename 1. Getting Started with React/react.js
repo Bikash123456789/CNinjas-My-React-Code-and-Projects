@@ -1,11 +1,9 @@
-const heading = <h1>Hello JSX</h1>
-const para = <p>Welcome to the JSX Session</p>
-const btn = <button>Click Me JSX</button>
-
 const div = <div>
-    {heading}
-    {para}
-    {btn}
+    <h1>Hello Bikash, This is JSX</h1>
+    <p>Welcome to the new JSX Session</p>
+    <button>
+        Click Me JSX
+    </button>
 </div>
 
 ReactDOM.createRoot(document.getElementById("root")).render(div)
