@@ -2,6 +2,7 @@ const App = () =>{
     const a = 6
     const b = 8
     const list = ["apple","banana","orange"]
+    const object = {name:"Bikash",age:27}
     const sum = (a,b) => a+b
     
     return (<>
@@ -11,6 +12,7 @@ const App = () =>{
         {list.map((item,index)=>{
             return <p key={index}>{item}</p>
         })}
+        <p>{object.name}'s age is {object.age}</p>
     </>)
 }
 
