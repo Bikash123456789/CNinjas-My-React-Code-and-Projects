@@ -1,13 +1,11 @@
 const App = () =>{
-    const name = "Bikash"
+    const a = 6
+    const b = 8
+    const sum = (a,b) => a+b
     
     return (<>
        
-        <h3>Hello {name}</h3>
-        <p>{false}</p>
-        <p>{true}</p>
-        <p>{undefined}</p>
-        <p>{null}</p>
+        <h2>The sum of {a} and {b} is {sum(a,b)} </h2>
     </>)
 }
 
