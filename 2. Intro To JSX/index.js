@@ -1,12 +1,13 @@
 const App = () =>{
-    const header = <h1>Welcome</h1>
     const name = "Bikash"
-    const course = "React"
-
+    
     return (<>
-        {header}
+       
         <h3>Hello {name}</h3>
-        <h3>This is introduction to {course} course</h3>
+        <p>{false}</p>
+        <p>{true}</p>
+        <p>{undefined}</p>
+        <p>{null}</p>
     </>)
 }
 
